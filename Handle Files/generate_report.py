@@ -31,7 +31,7 @@ def write_report(dictionary, report_file):
         f.write(str(k) + ':' + str(dictionary[k]) + '\n')
       f.close()
 
-employee_list = read_employees('/Users/bengj/MOOCs/Python OS/Handle Files/employees.csv')
+employee_list = read_employees('/<your_location>/employees.csv')
 dictionary = process_data(employee_list)
 
-write_report(dictionary, '/Users/bengj/MOOCs/Python OS/Handle Files/report.txt')
+write_report(dictionary, '/<your_location>/report.txt')
